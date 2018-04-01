@@ -1,0 +1,27 @@
+import mongoose from "mongoose";
+
+Const Schema = mongoose.Schema;
+
+export Const ContactSchema = new Schema({
+  firstName: {
+    type: String,
+    required: "Please enter your first name."
+  },
+  lastName: {
+    type: String,
+    required: "Please enter your last name."
+  },
+  email: {
+    type: String
+  },
+  company: {
+    type: String
+  },
+  phone: {
+    type: Number
+  },
+  created_date: {
+    type: Date,
+    default: Date.Now
+  }
+});
